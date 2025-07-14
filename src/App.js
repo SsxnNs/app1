@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css';
 
 function App() {
   const divstyle = {
@@ -9,10 +10,14 @@ function App() {
   };
 
   return (
-    <div style={divstyle}>
-      <h1>Hello world</h1>
-      <h1>ดีชาวโลก</h1>
-    </div>
+    <>
+      <div style={divstyle}>
+        <h1>Hello world</h1>
+        <h1>ดีชาวโลก</h1>
+      </div>
+      <h2>DeveloperThai.com</h2>
+      <div className="title">React & React Native</div>
+    </>
   );
 }
 
