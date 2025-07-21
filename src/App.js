@@ -1,12 +1,13 @@
 import React from 'react';
 import './style.css';
 import { Header, Content, Footer } from './func-components';
+import Calendar from './class-components'
 
 
 function App() {
   const divstyle = {
     color: 'red',
-    backgroundColor: 'powderblue',
+    backgroundColor: 'blue',
     fontSize: 'larger',
     padding: '3px'
   };
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <Header />
+      <p><center><Calendar/></center></p>
       <Content />
       <Footer />
     </>
