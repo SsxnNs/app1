@@ -2,11 +2,10 @@ import React from "react";
 
 export default function FromText() {
     const textPswd = React.useRef();
-    const textPswd2 = React.useRef(); // unified style with React.useRef()
+    const textPswd2 = React.useRef();
 
     const onBlurPassword = () => {
         const pswd = textPswd.current.value;
-        // Check if the password contains only alphanumeric characters
         if (!pswd.match(/^[0-9a-zA-Z]+$/)) {
             textPswd.current.value = "";
             alert('ต้องเป็น 0-9 หรือ a-z หรือ A-Z เท่านั้น');
@@ -22,7 +21,6 @@ export default function FromText() {
 
     return (
         <div className="mt-4 mx-auto p-3 rounded" style={{ width: '400px', background: '#cee' }}>
-            {/* ❌ 'from' is a typo; should be 'form' */}
             <form>
                 <div className="form-group mb-2">
                     <label htmlFor="login">ชื่อผู้ใช้ (Login)</label>

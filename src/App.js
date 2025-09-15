@@ -1,6 +1,6 @@
 import React from "react";
-import FromText from "./from-text.js";
+import FromSelectFile from "./from-select-file.js";
 
 export default function App(){
-    return <FromText/>
+    return <FromSelectFile/>
 }
